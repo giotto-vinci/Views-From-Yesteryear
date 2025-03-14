@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta piece="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta artist="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>The Novel & Demode</title>
   </head>
@@ -14,18 +14,69 @@
           <div id="search" type="input">Search</div>
           <div id="about">About</div>
           <div id="categories">Categories</div>
-          <div id="login">Login</div>
           <div id="sign-up">Sign Up</div>
+          <div id="login">Login</div>
         </nav>
       </header>
       <hr />
+
+      <figure>
+        <a href="https://en.wikipedia.org/wiki/Caravaggio">Caravaggio</a>
+        <div class="container">
+          <img
+            src="img\caravaggio-medusa-google-art-project.jpg!Large.jpg"
+            alt="Caravaggio's Medusa"
+          />
+        </div>
+        <figcaption class="figcaption">
+          <a href="https://www.wikiart.org/en/caravaggio/medusa-1597-1"
+            >Medusa</a
+          >
+        </figcaption>
+      </figure>
+
       <section class="gallery">
+        <article id="style" class="row-name">
+          <a href="https://en.wikipedia.org/wiki/Expressionism"
+            >Expressionism & Neo</a
+          >
+          <figure id="name" class="artist">
+            <a href="https://en.wikipedia.org/wiki/Albin_Egger-Lienz"
+              >Albin Eggar Lienz</a
+            >
+            <div class="image-container">
+              <img
+                src="https://github.com/giotto-vinci/Views-From-Yesteryear/blob/main/img/Expressionism-Albin%20Egger-Lienz-Finale.jpg"
+                alt="Finale"
+              />
+              <figcaption id="title" class="figcaption">
+                <a
+                  href="https://www.wikiart.org/en/albin-egger-lienz/finale-1918"
+                  >Finale</a
+                >
+              </figcaption>
+            </div>
+          <button class="button">
+            <div class="backward">
+              <a href="#">
+                <span class="left"></span>
+              </a>
+            </div>
+          </button>
+          <button class="button">
+            <div class="forward">
+              <a href="#">
+                <span class="right"></span>
+              </a>
+            </div>
+          </button>
+          </figure>
+        </article>
         <button class="button-b">
-          <article id="style" class="row-name">Expressionism & Neo</article>
-        </button>
-        <p id="expressionism" class="container">
+          <article id="style" class="row-name">Baroque</button>
+        <figure id="baroque" class="container">
           <button class="button-a">
-            <div id="artist" class="piece"></div>
+            <div id="name" class="artist"></div>
           </button>
           <button class="button">
             <div class="backward">
@@ -34,7 +85,9 @@
               </a>
             </div>
           </button>
-          <img src="" />
+          <div class="image-container">
+            <img src="" />
+          </div>
           <button class="button">
             <div class="forward">
               <a href="#">
@@ -45,39 +98,15 @@
           <button class="button-a">
             <div id="title" class="piece"></div>
           </button>
-        </p>
-        <button class="button-b">
-          <article id="style" class="row-name">Baroque</article>
-        </button>
-        <p id="baroque" class="container">
-          <button class="button-a">
-            <div id="artist" class="piece"></div>
-          </button>
-          <button class="button">
-            <div class="backward">
-              <a href="#">
-                <span class="left"></span>
-              </a>
-            </div>
-          </button>
-          <img src="" />
-          <button class="button">
-            <div class="forward">
-              <a href="#">
-                <span class="right"></span>
-              </a>
-            </div>
-          </button>
-          <button class="button-a">
-            <div id="title" class="piece"></div>
-          </button>
-        </p>
+        </figure>
+      </article>
+        </section>
         <button class="button-b">
           <article id="style" class="row-name">Classicism & Neo</article>
         </button>
-        <p id="classicism" class="container">
+        <figure id="classicism" class="container">
           <button class="button-a">
-            <div id="artist" class="piece"></div>
+            <div id="name" class="artist"></div>
           </button>
           <button class="button">
             <div class="backward">
@@ -97,13 +126,13 @@
           <button class="button-a">
             <div id="title" class="piece"></div>
           </button>
-        </p>
+        </figure>
         <button class="button-b">
           <article id="style" class="row-name">Conceptual Art</article>
         </button>
-        <p id="conceptual art" class="container">
+        <figure id="conceptual art" class="container">
           <button class="button-a">
-            <div id="artist" class="piece"></div>
+            <div id="name" class="artist"></div>
           </button>
           <button class="button">
             <div class="backward">
@@ -123,15 +152,15 @@
           <button class="button-a">
             <div id="title" class="piece"></div>
           </button>
-        </p>
+        </figure>
         <button class="button-b">
           <article id="style" class="row-name">
             Cubism, Futurism, Constructivism
           </article>
         </button>
-        <p id="cubism" class="container">
+        <figure id="cubism" class="container">
           <button class="button-a">
-            <div id="artist" class="piece"></div>
+            <div id="name" class="artist"></div>
           </button>
           <button class="button">
             <div class="backward">
@@ -151,13 +180,13 @@
           <button class="button-a">
             <div id="title" class="piece"></div>
           </button>
-        </p>
+        </figure>
         <button class="button-b">
           <article id="style" class="row-name">Dada</article>
         </button>
-        <p id="dadaism" class="container">
+        <figure id="dadaism" class="container">
           <button class="button-a">
-            <div id="artist" class="piece"></div>
+            <div id="name" class="artist"></div>
           </button>
           <button class="button">
             <div class="backward">
@@ -177,13 +206,13 @@
           <button class="button-a">
             <div id="title" class="piece"></div>
           </button>
-        </p>
+        </figure>
         <button class="button-b">
           <article id="style" class="row-name">Digital Art</article>
         </button>
-        <p id="digital-art" class="container">
+        <figure id="digital-art" class="container">
           <button class="button-a">
-            <div id="artist" class="piece"></div>
+            <div id="name" class="artist"></div>
           </button>
           <button class="button">
             <div class="backward">
@@ -203,15 +232,15 @@
           <button class="button-a">
             <div id="title" class="piece"></div>
           </button>
-        </p>
+        </figure>
         <button class="button-b">
           <article id="style" class="row-name">
             Impressionism + Neo & Post
           </article>
         </button>
-        <p id="impressionism" class="container">
+        <figure id="impressionism" class="container">
           <button class="button-a">
-            <div id="artist" class="piece"></div>
+            <div id="name" class="artist"></div>
           </button>
           <button class="button">
             <div class="backward">
@@ -231,13 +260,13 @@
           <button class="button-a">
             <div id="title" class="piece"></div>
           </button>
-        </p>
+        </figure>
         <button class="button-b">
           <article id="style" class="row-name">Pop Art</article>
         </button>
-        <p id="pop-art" class="container">
+        <figure id="pop-art" class="container">
           <button class="button-a">
-            <div id="artist" class="piece"></div>
+            <div id="name" class="artist"></div>
           </button>
           <button class="button">
             <div class="backward">
@@ -257,13 +286,13 @@
           <button class="button-a">
             <div id="title" class="piece"></div>
           </button>
-        </p>
+        </figure>
         <button class="button-b">
           <article id="style" class="row-name">Rococo</article>
         </button>
-        <p id="rococo-art" class="container">
+        <figure id="rococo-art" class="container">
           <button class="button-a">
-            <div id="artist" class="piece"></div>
+            <div id="name" class="artist"></div>
           </button>
           <button class="button">
             <div class="backward">
@@ -283,13 +312,13 @@
           <button class="button-a">
             <div id="title" class="piece"></div>
           </button>
-        </p>
+        </figure>
         <button class="button-b">
           <article id="style" class="row-name">Street Art</article>
         </button>
-        <p id="street-art" class="container">
+        <figure id="street-art" class="container">
           <button class="button-a">
-            <div id="artist" class="piece"></div>
+            <div id="name" class="artist"></div>
           </button>
           <button class="button">
             <div class="backward">
@@ -309,13 +338,13 @@
           <button class="button-a">
             <div id="title" class="piece"></div>
           </button>
-        </p>
+        </figure>
         <button class="button-b">
           <article id="style" class="row-name">Surrealism</article>
         </button>
-        <p id="surrealism" class="container">
+        <figure id="surrealism" class="container">
           <button class="button-a">
-            <div id="artist" class="piece"></div>
+            <div id="name" class="artist"></div>
           </button>
           <button class="button">
             <div class="backward">
@@ -335,13 +364,13 @@
           <button class="button-a">
             <div id="title" class="piece"></div>
           </button>
-        </p>
+        </figure>
         <button class="button-b">
           <article id="style" class="row-name">Symbolism</article>
         </button>
-        <p id="symbolism" class="container">
+        <figure id="symbolism" class="container">
           <button class="button-a">
-            <div id="artist" class="piece"></div>
+            <div id="name" class="artist"></div>
           </button>
           <button class="button">
             <div class="backward">
@@ -361,7 +390,7 @@
           <button class="button-a">
             <div id="title" class="piece"></div>
           </button>
-        </p>
+        </figure>
       </section>
     </main>
 

@@ -31,21 +31,40 @@ h1 {
 }
 
 .row-name {
+  display: grid;
+  box-sizing: border-box;
   color: blanchedalmond;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.5em;
   font-weight: bold;
+  
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
 }
 
 /*.gallery {
 }
 */
-.container {
+
+
+.image-container {
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
+  align-content: center;
   margin: 0 auto;
-  width: 100%;
-  height: 50vh;
 }
