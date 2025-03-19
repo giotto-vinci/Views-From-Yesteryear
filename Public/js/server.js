@@ -6,7 +6,7 @@ const path = require("path");
 const port = 1812;
 
 // Serves the front-end content in the public directory
-app.use("", express.static(path.join(__dirname, "./public")));
+app.use("", express.static(path.join(_dirname, "./public")));
 
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
