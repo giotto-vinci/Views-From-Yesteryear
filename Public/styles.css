@@ -1,29 +1,28 @@
 @import url("./reset.css");
 
-html {
-  padding: 0;
-  margin: 0;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.header {
+  padding: 12px;
 }
 
 body {
   display: flex;
   flex-direction: column;
   align-content: center;
+  background-color: rgb(91, 10, 153);
 }
 
-.main {
-  width: 100%;
-  height: 100%;
-  background-color: rgb(91, 10, 153);
+hr {
+  color: blanchedalmond;
 }
 
 h1 {
   text-align: center;
   font-size: 2em;
-}
-
-img {
-  width: 200px;
 }
 
 .nav {
@@ -34,14 +33,16 @@ img {
   justify-content: space-evenly;
 }
 
-.row-name {
-  display: grid;
+.row {
+  position: relative;
   box-sizing: border-box;
-  color: blanchedalmond;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: bold;
-  
+  color: blanchedalmond;
+  margin: 24px auto;
+  width: 100%;
+  height: 100%;
 }
 
 .gallery {
@@ -49,26 +50,84 @@ img {
   flex-direction: column;
 }
 
-.container {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  margin: 0 auto;
-}
-
-/*.gallery {
-}
-*/
-
-
-.image-container {
-  box-sizing: border-box;
+.wrapper {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-top: 10px;
+  border-bottom: 10px;
+}
+
+.image {
+  width: 600px;
+  display: block;
+  margin: auto;
+  position: relative;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: 0.6s;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+/*
+.overlay > * {
+  transform: translateY(25px);
+}
+*/
+.overlay figure {
+  position: absolute;
+  top: 0;
+  left: 5;
+  right: 5;
+}
+.overlay figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 5;
+  right: 5;
+}
+
+.overlay button {
+  position: absolute;
+  color: aqua;
+}
+
+.backward {
+  top: 5;
+  left: 0;
+  right: -50;
+  bottom: 5;
+}
+
+.forward {
+  top: 5;
+  right: 0;
+  left: -50;
+  bottom: 5;
+}
+/*
+.image-container {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
   justify-content: center;
   align-content: center;
   margin: 0 auto;
+  width: 40%;
 }
+*/
