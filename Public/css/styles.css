@@ -7,13 +7,14 @@
 }
 .header {
   padding: 12px;
+  background-color: rgb(69, 45, 155);
 }
 
 body {
   display: flex;
   flex-direction: column;
   align-content: center;
-  background-color: rgb(91, 10, 153);
+  background-color: rgb(85, 11, 142);
 }
 
 hr {
@@ -51,34 +52,31 @@ h1 {
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  border-top: 10px;
-  border-bottom: 10px;
+  position: relative;
+  display: block;
+  margin: auto;
+  width: 600px;
 }
 
 .image {
-  width: 600px;
-  display: block;
-  margin: auto;
   position: relative;
+  width: 600px;
 }
 
 .overlay {
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 600px;
+  width: 100%;
   height: 100%;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.6);
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.6);
   opacity: 0;
-  transition: 0.6s;
+  transition: .6s;
+  top: 45%;
+  bottom: 45%;
 }
 
 .overlay:hover {
@@ -108,17 +106,26 @@ h1 {
 }
 
 .backward {
-  top: 5;
-  left: 0;
-  right: -50;
-  bottom: 5;
+  background: rgba(49, 49, 49, 0.6);
+  border-radius: 1em;
+  top: 45%;
+  left: 5%;
+  right: 70%;
+  bottom: 45%;
 }
 
 .forward {
-  top: 5;
-  right: 0;
-  left: -50;
-  bottom: 5;
+  background: rgba(49, 49, 49, 0.6);
+  border-radius: 1em;
+  top: 45%;
+  left: 70%;
+  right: 5%;
+  bottom: 45%;
+}
+
+.footer {
+  text-align: center;
+  font-size: 12px;
 }
 /*
 .image-container {
