@@ -74,7 +74,7 @@ h1 {
   margin: auto;
   background-color: rgba(0, 0, 0, 0.6);
   opacity: 0;
-  transition: .6s;
+  transition: 0.6s;
   top: 45%;
   bottom: 45%;
 }
@@ -128,6 +128,48 @@ h1 {
   font-size: 16px;
   border-top: 4px;
 }
+
+@media (max-width: 600px) {
+  html {
+    width: 100%;
+    height: 100%;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+  }
+  .header {
+    margin: auto;
+    font-size: 12px;
+    width: auto;
+  }
+  .gallery {
+    position: relative;
+    width: 100%;
+  }
+  .overlay {
+    position: inherit;
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .header {
+    position: relative;
+    width: 100%;
+  }
+  .gallery {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
 /*
 .image-container {
   box-sizing: border-box;
