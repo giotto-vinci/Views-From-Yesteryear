@@ -68,7 +68,11 @@ const el = {
   artist15: document.getElementById("name15"),
   piece15: document.getElementById("title15"),
 };
-
+/*
+overlay.addEventListener('click', e => {
+  console.log("Overlay");
+})
+*/
 // Iterate through objects within a style;
 const content = [
   {
@@ -711,6 +715,29 @@ const imgMap = {
 };
 
 console.log(el);
+
+
+//getGitHubData
+
+async function getGitHubData() {
+  const url = 'https://api.github.com/users/giotto-vinci/repos';
+  try {
+      const response = await fetch('url');
+      const data = await response.json()
+      const receivedInfo = data
+
+      then(response => {
+        if (!response.ok) {
+            throw new Error('Network response failed ' + response.statusText);
+        }
+        return response.json();
+    })
+    .then(data => callback(null, data))
+    .catch(error => callback(error, null));
+} catch (error) {
+  console.log(error)
+}
+  };
 
 
 let currentIndexes = Array(content.length).fill(0);
