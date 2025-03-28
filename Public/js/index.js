@@ -68,6 +68,7 @@ const el = {
   artist15: document.getElementById("name15"),
   piece15: document.getElementById("title15"),
 };
+
 /*
 overlay.addEventListener('click', e => {
   console.log("Overlay");
@@ -772,8 +773,40 @@ function updateContent() {
 }
   
   function startUpdatingContent() {
-    setInterval(updateContent, 4000);
+    setInterval(updateContent, 6000);
   }
 
 // Call this function to start loading artworks
 startUpdatingContent();
+
+
+/*
+content.forEach((movement, movementIndex) => {
+  const forwardButton = document.getElementById(`for-${movementIndex}`);
+  const backButton = document.getElementById(`back-${movementIndex}`);
+
+  // Forward button event listener for each movement
+  forwardButton.addEventListener('click', function() {
+    if (currentIndexes[movementIndex] < movement.artwork.length - 1) {
+      currentIndexes[movementIndex]++;
+      updateContent(); // Update content immediately for the movement
+    }
+  });
+
+  // Back button event listener for each movement
+  backButton.addEventListener('click', function() {
+    if (currentIndexes[movementIndex] > 0) {
+      currentIndexes[movementIndex]--;
+      updateContent(); // Update content immediately for the movement
+    }
+  });
+});
+
+function updateDisplay() {
+  content.forEach((movement, movementIndex) => {
+    const currentItem = movement.artwork[currentIndexes[movementIndex]];
+    // Ensure image source is updated for each movement
+    document.getElementById('imageSrc').src = currentItem.imgSrc;
+  });
+}
+  */

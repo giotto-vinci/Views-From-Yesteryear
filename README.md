@@ -1,5 +1,5 @@
 Hi,
 
-I'm Roderick. This will be the repository for my Capstone Project.  The focus is an intuitive app to view major artworks throughout history.  The goal is to have the the visual artwork as the focus, while being organized by art movements as the default, or by artist, style, or century depending on the user's preference. I plan to use the Wikipedia API to give people the opportunity to go directly from any work that interests them to detailed information in regard to the artist, style, or movement. My repo, [Praxi-2](https://github.com/giotto-vinci/Praxi-2), shows a very, very, rough idea of what I am planning.
+My ReadMe will not e updated for the Capstone project.  There is no way I can complete my project to meet the necessary requirements and that is on me. I appreciate Code:You and all I have learned during my cohort.  I'm am aware that, for the forseeable future, there will be no more opportunities for NKY students after this cohort. With that being said I will continue learning on my own and complete this project and more for myself and continue working towards transitioning into the tech industry.
 
 Thank You
