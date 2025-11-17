@@ -718,6 +718,9 @@ const imgMap = {
 console.log(el);
 
 
+
+/*
+
 //getGitHubData
 
 async function getGitHubData() {
@@ -740,6 +743,8 @@ async function getGitHubData() {
 }
   };
 
+  */
+
 
 let currentIndexes = Array(content.length).fill(0);
 
@@ -748,9 +753,11 @@ function updateContent() {
   const artworkIndex = currentIndexes[movementIndex];
   const artwork = movement.artwork[artworkIndex];
 
-  const artist = artwork.currentIndexes + 1;
-  const piece = artwork.currentIndexes + 1;
+  // const artist = artwork.currentIndexes + 1;
+  // const piece = artwork.currentIndexes + 1;
   const imgKey = imgMap[movement.movement]; // Map movement to correct image key
+
+  /*
 
   if (artist) {
   artist.textContent = artwork.artist || artwork.artist1 || artwork.artist2 || artwork.artist3 || artwork.artist4 || artwork.artist5 || artwork.artist6 || artwork.artist7 || artwork.artist8 || artwork.artist9 || artwork.artist10 || artwork.artist11 || artwork.artist12 || artwork.artist13 || artwork.artist14 || artwork.artist15;
@@ -760,6 +767,8 @@ function updateContent() {
   }
 
   console.log(artist, piece);
+
+  */
 
   const imageSrc = artwork[imgKey];
   // Update image source if it exists
@@ -777,17 +786,15 @@ function updateContent() {
   }
 
 // Call this function to start loading artworks
-startUpdatingContent();
+startUpdatingContent(updateContent);
 
-
-/*
 content.forEach((movement, movementIndex) => {
   const forwardButton = document.getElementById(`for-${movementIndex}`);
   const backButton = document.getElementById(`back-${movementIndex}`);
 
   // Forward button event listener for each movement
   forwardButton.addEventListener('click', function() {
-    if (currentIndexes[movementIndex] < movement.artwork.length - 1) {
+    if (currentIndexes[movementIndex] < movement.artwork.length) {
       currentIndexes[movementIndex]++;
       updateContent(); // Update content immediately for the movement
     }
@@ -795,7 +802,7 @@ content.forEach((movement, movementIndex) => {
 
   // Back button event listener for each movement
   backButton.addEventListener('click', function() {
-    if (currentIndexes[movementIndex] > 0) {
+    if (currentIndexes[movementIndex] < movement.artwork.length) {
       currentIndexes[movementIndex]--;
       updateContent(); // Update content immediately for the movement
     }
@@ -809,4 +816,3 @@ function updateDisplay() {
     document.getElementById('imageSrc').src = currentItem.imgSrc;
   });
 }
-  */
